@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Meetic
+
+# Model Form Field configuration
+form: $/hao/socialnetwork/models/meetic/fields.yaml
+
+# Model Class name
+modelClass: Hao\SocialNetwork\Models\Meetic
+
+# Default redirect location
+defaultRedirect: hao/socialnetwork/meetic
+
+# Create page
+create:
+    title: Create Meetic
+    redirect: hao/socialnetwork/meetic/update/:id
+    redirectClose: hao/socialnetwork/meetic
+
+# Update page
+update:
+    title: Edit Meetic
+    redirect: hao/socialnetwork/meetic
+    redirectClose: hao/socialnetwork/meetic
+
+# Preview page
+preview:
+    title: Preview Meetic
