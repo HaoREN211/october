@@ -7,6 +7,25 @@ return [
           'meetics' => 'Meetic',
       ]
     ],
+
+    'backend' => [
+        'meetic' => [
+           'id' => 'ID',
+            'personnality' => [
+                'relation_type' => 'Prêt à m\'engager dans une relation ? :',
+                'romantic' => 'Romantique :',
+                'temper' => 'Trait de caractère le plus marqué :',
+                'marriage' => 'Pour moi le mariage c\'est :',
+                'children_wish' => 'Je veux des enfants :',
+                'nationality' => 'Ma nationalité :',
+            ],
+            'tabs' => [
+                'personnality' => 'Ma personnalité',
+            ]
+        ],
+    ],
+
+
     'auth' => [
         'title' => 'Administration Area'
     ],

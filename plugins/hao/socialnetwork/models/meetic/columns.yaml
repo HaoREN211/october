@@ -4,7 +4,7 @@
 
 columns:
     id:
-        label: ID
+        label: 'hao.socialnetwork::lang.backend.meetic.id'
         searchable: false
         invisible: true
     name:
