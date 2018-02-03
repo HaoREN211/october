@@ -6,13 +6,13 @@
 list: $/hao/socialnetwork/models/meetic/columns.yaml
 
 # Model Class name
-modelClass: Hao\SocialNetwork\Models\Meetic
+modelClass: Hao\Socialnetwork\Models\Meetic
 
 # List Title
 title: Manage Meetics
 
 # Link URL for each record
-recordUrl: hao/socialnetwork/meetic/update/:id
+recordUrl: hao/socialnetwork/meetics/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

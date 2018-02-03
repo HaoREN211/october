@@ -1,10 +1,11 @@
-<?php namespace Hao\SocialNetwork;
+<?php namespace Hao\Socialnetwork;
 
+use Illuminate\Support\Facades\Lang;
 use Backend;
 use System\Classes\PluginBase;
 
 /**
- * SocialNetwork Plugin Information File
+ * Socialnetwork Plugin Information File
  */
 class Plugin extends PluginBase
 {
@@ -16,7 +17,7 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'SocialNetwork',
+            'name'        => 'Socialnetwork',
             'description' => 'No description provided yet...',
             'author'      => 'Hao',
             'icon'        => 'icon-leaf'
@@ -51,7 +52,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Hao\SocialNetwork\Components\MyComponent' => 'myComponent',
+            'Hao\Socialnetwork\Components\MyComponent' => 'myComponent',
         ];
     }
 
@@ -63,8 +64,8 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'hao.socialnetwork.some_permission' => [
-                'tab' => 'SocialNetwork',
+            'hao.socialnetwork.access_meetics' => [
+                'tab' => 'Socialnetwork',
                 'label' => 'Some permission'
             ],
         ];
@@ -79,27 +80,21 @@ class Plugin extends PluginBase
     {
         return [
             'socialnetwork' => [
-                'label'       => 'SocialNetwork',
+                'label'       => Lang::get('hao.socialnetwork::lang.plugin.name'),
                 'url'         => Backend::url('hao/socialnetwork/index/index'),
-                'icon'        => 'icon-leaf',
+                'icon'        => 'icon-commenting-o',
                 'permissions' => ['hao.socialnetwork.*'],
                 'order'       => 500,
-            ],
 
-            /*sideMenu' => [
-                'posts' => [
-                    'label'       => 'Posts',
-                    'icon'        => 'icon-copy',
-                    'url'         => Backend::url('acme/blog/posts'),
-                    'permissions' => ['acme.blog.access_posts']
-                ],
-                'categories' => [
-                    'label'       => 'Categories',
-                    'icon'        => 'icon-copy',
-                    'url'         => Backend::url('acme/blog/categories'),
-                    'permissions' => ['acme.blog.access_categories']
+                'sideMenu' => [
+                    'meetics' => [
+                        'label' => Lang::get('hao.socialnetwork::lang.plugin.menus.meetics'),
+                        'icon' => 'icon-maxcdn',
+                        'url' => Backend::url('hao/socialnetwork/meetics'),
+                        'permissions' => ['hao.socialnetwork.access_meetics'],
+                    ],
                 ]
-            ],*/
+            ],
         ];
     }
 }

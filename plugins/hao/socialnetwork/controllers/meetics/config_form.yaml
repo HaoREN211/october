@@ -9,22 +9,22 @@ name: Meetic
 form: $/hao/socialnetwork/models/meetic/fields.yaml
 
 # Model Class name
-modelClass: Hao\SocialNetwork\Models\Meetic
+modelClass: Hao\Socialnetwork\Models\Meetic
 
 # Default redirect location
-defaultRedirect: hao/socialnetwork/meetic
+defaultRedirect: hao/socialnetwork/meetics
 
 # Create page
 create:
     title: Create Meetic
-    redirect: hao/socialnetwork/meetic/update/:id
-    redirectClose: hao/socialnetwork/meetic
+    redirect: hao/socialnetwork/meetics/update/:id
+    redirectClose: hao/socialnetwork/meetics
 
 # Update page
 update:
     title: Edit Meetic
-    redirect: hao/socialnetwork/meetic
-    redirectClose: hao/socialnetwork/meetic
+    redirect: hao/socialnetwork/meetics
+    redirectClose: hao/socialnetwork/meetics
 
 # Preview page
 preview:

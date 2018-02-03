@@ -1,4 +1,4 @@
-<?php namespace Hao\SocialNetwork\Models;
+<?php namespace Hao\Socialnetwork\Models;
 
 use Model;
 

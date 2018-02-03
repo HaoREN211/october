@@ -1,12 +1,12 @@
-<?php namespace Hao\SocialNetwork\Controllers;
+<?php namespace Hao\Socialnetwork\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
 
 /**
- * Meetic Back-end Controller
+ * Meetics Back-end Controller
  */
-class Meetic extends Controller
+class Meetics extends Controller
 {
     public $implement = [
         'Backend.Behaviors.FormController',
@@ -20,6 +20,6 @@ class Meetic extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Hao.SocialNetwork', 'socialnetwork', 'meetic');
+        BackendMenu::setContext('Hao.Socialnetwork', 'socialnetwork', 'meetics');
     }
 }

@@ -1,7 +1,4 @@
-1.0.1: First version of SocialNetwork
+1.0.1: First version of Socialnetwork
 1.0.2:
-    - Initialition de la base de données et les tables de dimensions
-    - create_meetic_locations_table.php
-1.0.3:
-    - Initialition de la base de données et la table du fait
+    - creating the table meetic
     - create_meetics_table.php
